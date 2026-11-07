@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça os achados do Seu Adalberto: invenções mágicas, máquinas colossais e aventuras espaciais.">
+  <title>Loja do Adalberto | Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#111923">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Loja do Adalberto | Invenções impossíveis">
+  <meta property="og:description" content="Conheça os achados do Seu Adalberto: invenções mágicas, máquinas colossais e aventuras espaciais.">
+  <meta property="og:image" content="img/caneta.webp">
+  <meta property="og:image:alt" content="Caneta de Desenhar Portais">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"><img src="img/logo.webp" alt="Loja do Adalberto" class="logo" width="140" height="70"></a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Finalizar compra</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero py-5">
+      <div class="container">
+        <p class="eyebrow mb-2">Achados do Seu Adalberto</p>
+        <h1 class="display-5 fw-bold">Se você imaginou, o Seu Adalberto tem.</h1>
+        <p class="lead col-lg-8">
+          De canetas que abrem portais a aspiradores de furacões,
+           aqui sempre tem uma invenção esperando por você. Entre, dê uma olhada e tente sair levando só o que veio buscar.
+        </p>
+      </div>
+    </section>
+
+    <section class="container py-5" aria-labelledby="titulo-produtos">
+      <div class="mb-4">
+        <h2 id="titulo-produtos">Produtos em destaque</h2>
+        <p class="text-secondary mb-0">Descubra produtos que vão além da imaginação.</p>
+      </div>
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <label for="filtroProduto" class="form-label">Buscar produto</label>
+          <input id="filtroProduto" class="form-control" type="search" placeholder="Ex.: caneta" autocomplete="off">
+        </div>
+        <div class="col-md-4">
+          <label for="filtroCategoria" class="form-label">Categoria</label>
+          <select id="filtroCategoria" class="form-select">
+            <option value="">Todas as categorias</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="ordenacao" class="form-label">Ordenar por</label>
+          <select id="ordenacao" class="form-select">
+            <option value="nome">Nome de A a Z</option>
+            <option value="menorPreco">Menor preço</option>
+            <option value="maiorPreco">Maior preço</option>
+          </select>
+        </div>
+      </div>
+      <div class="row g-4" id="listaProdutos"></div>
+      <p id="mensagemFiltro" class="mt-4" role="status" aria-live="polite"></p>
+      <noscript><p>Ative o JavaScript para visualizar os produtos da loja.</p></noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container">
+      <p class="mb-0">
+        Loja do Adalberto · Invenções impossíveis para aventuras extraordinárias.
+      </p>
+    </div>
+  </footer>
+
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="js/produtos.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+
+</html>
